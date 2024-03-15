@@ -1,0 +1,285 @@
+/*---------------------FORMATO GENERAL--------------------*/
+
+:root {
+    --Primario: #FF2626;
+    --Secundario: #FFE6E6;
+    --Negro: #171717;
+    --Blanco: #fff;
+    --Gris: #8B8B8B;
+    --Verde: #2FAB73;
+    --FuentePrimaria: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--FuentePrimaria);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Negro);
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--Negro);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--Negro);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--Negro);
+
+}
+
+p {
+    font-weight: 400;
+    color: var(--Gris);
+    font-size: 1rem;
+}
+
+/*---------------------FORMATO HEADER--------------------*/
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    background-color: var(--Blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo {
+    width: 130px;
+    height: 45;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu a:hover {
+    color: var(--Primario);
+}
+
+.botonera {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------------FORMATO BANNER 1 y 2--------------------*/
+
+/*###### BANNER 1 #######*/
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    background-color: var(--Blanco);
+}
+    
+.banner__ColumnaIzquierda{
+    width: 50%;
+}
+
+.banner__ColumnaIzquierda__boton1{
+    background-color: var(--Secundario);
+    color: var(--Primario);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 80px;
+    width: 35%;
+    padding: 0.80rem 0;
+}
+
+.banner__ColumnaIzquierda__titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.banner__ColumnaIzquierda__titulo__red{
+    color: var(--Primario);
+}
+
+.banner__ColumnaIzquierda__texto{
+    margin-bottom: 40px;
+}
+
+.banner__ColumnaIzquierda__botonera{
+    padding-left: 10px;
+    display: flex;
+    width: 70%;
+    justify-content: start;
+    gap: 45px;
+}
+
+.banner__ColumnaIzquierda__boton2{
+    display: flex;
+    width: 40%;
+    background-color: var(--Primario);
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 35%;
+    padding: 0.50rem 0;
+    gap: 5px;
+}
+
+.banner__ColumnaIzquierda__boton2__Formato{
+    color: var(--Blanco);
+
+}
+
+.banner__ColumnaIzquierda__boton3{
+    display: flex;
+    width: 40%;
+    background-color: var(--Blanco);
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 35%;
+    padding: 0.50rem 0;
+    gap: 5px;
+}
+
+.banner__ColumnaIzquierda__boton3__Formato{
+    color: var(--Negro);
+}
+
+.banner__ImgDerecha{
+    width: 50%;
+}
+
+/*###### BANNER 2 #######*/
+
+.dimensiones_img{
+    width: 400px;
+    height: 500px;
+}
+
+.boton_resize{
+    width: 40%;
+    margin-top: 30px;
+    padding: 15px 0;
+    padding-left: 10px;
+}
+
+/*---------------------TARJETAS 1--------------------*/
+
+.tarjetas{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: var(--Blanco);
+}
+
+.tarjetas__title{
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.tarjetas__paneles{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.panel{
+    width: 260px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--Blanco);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--Secundario);
+    color: var(--Negro);
+    text-align: center;
+}
+
+.panel:hover{
+    background-color: var(--Primario);
+    border-color: var(--Primario);
+    box-shadow: 15px 15px 10px var(--Secundario);
+    transition: 0.8s;
+}
+
+.panel:hover h3{
+    color: var(--Blanco);
+}
+
+.panel__title{
+    padding-top: 30px;
+    color: var(--Negro);
+}
+
+/*---------------------TARJETAS 2--------------------*/
+
+.panel2{
+    width: 260px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--Blanco);
+    color: var(--Negro);
+    text-align: center;
+}
+
+.margin{
+    margin-top: 20px;
+}
+
+.margin__section{
+    margin-top: 40px;
+}
